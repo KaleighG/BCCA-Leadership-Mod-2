@@ -25,7 +25,7 @@ class TestAgeIn(SimpleTestCase):
         self.assertContains(response, "15")
 
     def test_age_in_1950_born_1920(self):
-        response = self.client.get("/age-in/1950/120")
+        response = self.client.get("/age-in/1950/1920")
         self.assertContains(response, "30")
 
 
