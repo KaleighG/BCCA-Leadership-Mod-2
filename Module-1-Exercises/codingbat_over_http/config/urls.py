@@ -18,9 +18,9 @@ from django.contrib import admin
 from django.urls import path
 from app.views import nearHundred, stringSplosion, catDog, loneSum
 urlpatterns = [
-    path('near-hundred/<int:n>', nearHundred),
-    path('string-splosion/<string>', stringSplosion),
-    path('cat-dog/<string>', catDog),
-    path('lone-sum/<int:n1>/<int:n2>/<int:n3>', loneSum),
+    path('warmup-1/near-hundred/<int:n>', nearHundred),
+    path('warmup-2/string-splosion/<string>', stringSplosion),
+    path('string-2/cat-dog/<string>', catDog),
+    path('logic-2/lone-sum/<int:n1>/<int:n2>/<int:n3>', loneSum),
     path('admin/', admin.site.urls),
 ]
