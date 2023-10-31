@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block content %}
+<div class="list">
+  <div class="team-top-left">
+    <ul>
+      {% for i in teams %} {% if i.name == 'Management' %}
+      <a class="team-link" href="details/management"
+        ><h3 class="home-team-title-left">{{i.name}}</h3></a
+      >
+      {% endif %} {% endfor %}
+    </ul>
+  </div>
+
+  <div class="team-top-right">
+    <ul>
+      {% for i in teams %} {% if i.name == 'Community' %}
+      <a class="team-link" href="details/community"
+        ><h3 class="home-team-title-right">{{i.name}}</h3></a
+      >
+      {% endif %} {% endfor %}
+    </ul>
+  </div>
+
+  <div class="team-bottom-left">
+    <ul>
+      {% for i in teams %} {% if i.name == 'Documentation' %}
+      <a class="team-link" href="details/documentation"
+        ><h3 class="home-team-title-left">{{i.name}}</h3></a
+      >
+      {% endif %} {% endfor %}
+    </ul>
+  </div>
+
+  <div class="team-bottom-right">
+    <ul>
+      {% for i in teams %} {% if i.name == 'Procurement' %}
+      <a class="team-link" href="details/procurement"
+        ><h3 class="home-team-title-right">{{i.name}}</h3></a
+      >
+      {% endif %} {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock content %}
